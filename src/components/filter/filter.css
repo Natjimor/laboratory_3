@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.filtercontainer{
+    width: 50vw;
+    padding: 3%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px #005af63f);
+    margin-bottom: 3%;
+}
+
+.filtercontainer p{
+    color: #005af6;
+    font-family: "Nunito", sans-serif;
+    font-weight: 1000;
+    font-size: 110%;
+    margin-right: 5%;
+}
+
+.filtercontainer select{
+    width: 65%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 2px solid #bad2ff;
+    padding-left: 3%;
+}
+
+.filtercontainer select:focus{
+    border: 2px solid #005af6;
+}
+
+.filtercontainer select:disabled{
+    border: 2px solid #bad2ff;
+}
+
+.filtercontainer select option{
+    font-family: "Nunito", sans-serif;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .filtercontainer {
+      width: 80%; /* Ajusta el ancho del contenedor */
+      padding: 5%;
+      flex-direction: column;
+    }
+  
+    .filtercontainer p {
+      font-size: 150%; /* Ajusta el tamaño del texto */
+      margin-right: 60%;
+      margin-bottom: 5%;
+      margin-top: 2%;
+    }
+  
+    .filtercontainer select {
+      width: 100%; /* Ajusta el ancho del select */
+      height: 8vh; /* Ajusta la altura del select */
+      margin-bottom: 3%;
+      font-size: 100%;
+    }
+  }
+  
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .filtercontainer {
+      width: 80%; /* Ajusta el ancho del contenedor */
+      height: 13vh;
+      padding: 5%;
+      flex-direction: column;
+      justify-content: right;
+      margin-bottom: 8%;
+    }
+  
+    .filtercontainer p {
+      font-size: 120%; /* Ajusta el tamaño del texto */
+      margin-bottom: 5%;
+    }
+  
+    .filtercontainer select {
+      width: 90%; /* Ajusta el ancho del select */
+      height: 6vh; /* Ajusta la altura del select */
+    }
+}

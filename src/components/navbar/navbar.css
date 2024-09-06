@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    width: 100vw;
+    height: 5vw;
+    background-color: #151515a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tittle{
+    color: rgb(246, 246, 246);
+    font-family: "Titan One", sans-serif;
+    font-weight: 1;
+    font-size: 170%;
+    margin-right: 50%;
+}
+.button{
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    width: 7vw;
+    height: 2vw ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color:rgb(252, 31, 105);
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:rgb(219, 0, 0);
+    filter: drop-shadow(0px 0px 6px #fa3d3daa);
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        width: 96%;
+        padding: 2%; /* Reduce el padding en pantallas muy pequeñas */
+        height: 8vh;
+    }
+    .tittle {
+        font-size: 160%;
+        margin-right: 40%; /* Reduce el tamaño del título en pantallas más pequeñas */
+    }
+
+    .button {
+        width: 20%; /* Ajusta el ancho del botón */
+        height: 6vh; /* Ajusta la altura del botón */
+        font-size: 100%; /* Ajusta el tamaño de la fuente del botón */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    nav {
+        width: 96vw;
+        padding: 2%; /* Reduce el padding en pantallas muy pequeñas */
+        height: 8vh;
+    }
+
+    .tittle {
+        font-size: 140%; /* Reduce aún más el tamaño del título */
+        margin-right: 5%; /* Ajusta el margen del título */
+    }
+
+    .button {
+        width: 30%; /* Ajusta el ancho del botón */
+        height: 30px; /* Ajusta la altura del botón */
+        font-size: 90%; /* Ajusta el tamaño de la fuente del botón */
+    }
+}

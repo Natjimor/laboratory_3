@@ -1,0 +1,144 @@
+/* Estilos para el contenedor de la lista */
+.listcontainer {
+    width: 50vw;
+    padding: 3%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(5px 5px 5px #005af63f);
+}
+
+/* Estilo para el título de la lista */
+.listcontainer h2 {
+    color: #005af6;
+    font-family: "Nunito", sans-serif;
+    font-weight: 1000;
+    font-size: 110%;
+    margin-bottom: 2%;
+}
+
+/* Estilo para los elementos de la lista de gastos */
+.expense-item {
+    width: 90%;
+    height: 10vh;
+    background-color: #f1f0ff;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px #005af63f);
+    display: flex;
+    padding: 5%;
+    position: relative;
+    overflow: hidden;
+    user-select: none; /* Evita la selección de texto */
+}
+
+/* Estilo para el contenido dentro del elemento de la lista */
+.expense-item .text {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+/* Estilo para la categoría del gasto */
+.expense-item .category {
+    color: #005af6;
+    font-family: "Nunito", sans-serif;
+    font-weight: 1000;
+    font-size: 90%;
+}
+
+/* Estilo para la imagen del gasto */
+.expense-item .image {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 3%;
+    user-select: none; /* Previene la selección del contenido */
+    pointer-events: none; /* Desactiva los eventos del ratón (como clics) */
+    -webkit-user-drag: none; /* Previene el arrastre de la imagen en navegadores WebKit */
+}
+
+/* Estilo para el monto del gasto */
+.expense-item .amount {
+    color: #232323;
+    font-family: "Nunito", sans-serif;
+    font-weight: 1000;
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10%;
+}
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .listcontainer {
+      width: 80%; /* Ajusta el ancho del contenedor */
+      padding: 5%;
+    }
+  
+    .listcontainer h2 {
+      font-size: 150%; /* Ajusta el tamaño de fuente */
+    }
+  
+    .expense-item {
+      height: 14vh; /* Permite que la altura se ajuste al contenido */
+    }
+  
+    .expense-item .text {
+      width: 100%; /* Ajusta el ancho del texto */
+    }
+  
+    .expense-item .category {
+      font-size: 130%; /* Ajusta el tamaño de fuente */
+    }
+  
+    .expense-item .image {
+      width: 20vw; /* Ajusta el tamaño de la imagen */
+      height: 20vw; /* Mantiene la proporción de la imagen */
+      margin-right: 5%;
+    }
+  
+    .expense-item .amount {
+      font-size: 150%; /* Ajusta el tamaño de fuente */
+      margin-left: 3%; /* Ajusta el margen para pantallas pequeñas */
+    }
+}
+  
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .listcontainer {
+      width: 80%; /* Ajusta el ancho del contenedor */
+      padding: 5%; /* Ajusta el padding */
+    }
+  
+    .listcontainer h2 {
+      font-size: 120%; /* Ajusta el tamaño de fuente */
+    }
+    .expense-item{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .expense-item {
+      height: auto; /* Permite que la altura se ajuste al contenido */
+    }
+  
+    .expense-item .text {
+      width: 100%; /* Ajusta el ancho del texto */
+    }
+  
+    .expense-item .category {
+      font-size: 5vw; /* Ajusta el tamaño de fuente */
+    }
+  
+    .expense-item .image {
+      width: 20vw; /* Ajusta el tamaño de la imagen */
+      height: 20vw; /* Mantiene la proporción de la imagen */
+      margin-bottom: 8%;
+    }
+  
+    .expense-item .amount {
+      font-size: 120%; /* Ajusta el tamaño de fuente */
+      margin-left: 2%; /* Ajusta el margen para pantallas pequeñas */
+    }
+  }

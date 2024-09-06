@@ -1,0 +1,22 @@
+/* progress.css */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #005af6 !important; /* Añadir !important para forzar el estilo */
+    font-size: 24px !important;
+    font-weight: bold !important;
+    font-family: "Titan One", sans-serif !important;
+    font-weight: 1 !important;
+    font-size: 50% !important;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #005af6 !important; /* Cambia el color de la barra de progreso */
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6 !important; /* Cambia el color de la pista detrás de la barra de progreso */
+}

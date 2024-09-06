@@ -1,0 +1,31 @@
+#buttonModal{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #005af6;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 220%;
+    filter: drop-shadow(3px 3px 3px #005af689);
+}
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    #buttonModal {
+      width: 8vw; /* Ajusta el tamaño del botón */
+      height: 8vw;
+      font-size: 180%; /* Ajusta el tamaño del texto */
+    }
+}
+  
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #buttonModal {
+      width: 15vw; /* Ajusta el tamaño del botón */
+      height: 15vw;
+      font-size: 150%; /* Ajusta el tamaño del texto */
+    }
+}

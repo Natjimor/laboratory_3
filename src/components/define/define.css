@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.sectionform{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.container{
+    width: 50vw;
+    height: 30vh;
+    padding: 3%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #005af63f);
+}
+.container h2{
+    font-family: "Titan One", sans-serif;
+    font-weight: 1;
+    font-size: 170%;
+    margin-bottom: 3%;
+    color: #005af6;
+}
+.container input{
+    width: 96%;
+    height: 20%;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    border: none;
+    outline: none;
+    border: 2px solid #bad2ff;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.container input:focus{
+    border: 2px solid #005af6;
+}
+.container button{
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #005af6;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-weight: 800;
+}
+.container button:disabled{
+    background-color: #bad2ff;
+    cursor: not-allowed;
+}
+.container button:disabled:hover{
+    background-color: #bad2ff;
+}
+.container button:hover{
+    background-color: #0b4dc9;
+}
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        height: 40%;
+        padding: 3%;
+    }
+
+    .container h2 {
+        font-size: 180%;
+    }
+
+    .container input,
+    .container button {
+        height: 20%;
+        font-size: 100%;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .container {
+        width: 75%;
+        height: 35%;
+        padding: 5%;
+    }
+
+    .container h2 {
+        font-size: 140%;
+        margin-bottom: 10%;
+    }
+
+    .container input,
+    .container button {
+        height: 15%;
+        font-size: 90%;
+    }
+}

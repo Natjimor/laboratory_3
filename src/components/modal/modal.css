@@ -1,0 +1,193 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#sectionmodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.containermodal{
+    width: 50vw;
+    height: 70vh;
+    padding: 3%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(5px 5px 5px #00102d89);
+    margin-bottom: 3%;
+}
+
+.containermodal label{
+    color: #1c1c1c;
+    font-family: "Nunito", sans-serif;
+    font-weight: 1000;
+    font-size: 95%;
+    margin-right: 5%;
+}
+
+.containermodal h2{
+    color: #005af6;
+    font-family: "Titan One", sans-serif;
+    font-weight: 1;
+
+}
+
+.containermodal select{
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 2px solid #bad2ff;
+    padding-left: 3%;
+    font-family: "Nunito", sans-serif;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.containermodal select:focus{
+    border: 2px solid #005af6;
+    font-family: "Nunito", sans-serif;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+
+.containermodal select:disabled{
+    border: 2px solid #bad2ff;
+}
+
+.containermodal select option{
+    font-family: "Nunito", sans-serif;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+
+.containermodal input{
+    width: 96.6%;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 2px solid #bad2ff;
+    padding-left: 3%;
+    margin-bottom: 3%;
+}
+
+.containermodal input::placeholder{
+    font-family: "Nunito", sans-serif;
+    color: rgb(127, 127, 127);
+    font-weight: 600;
+}
+
+.containermodal input:focus{
+    border: 2px solid #005af6;
+    font-family: "Nunito", sans-serif;
+    color: rgb(29, 29, 29);
+    font-weight: 600;
+}
+
+.containermodal input:disabled{
+    border: 2px solid #bad2ff;
+   
+}
+.containermodal button{
+    width: 100%;
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #005af6;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-weight: 800;
+    
+}
+.containermodal button:disabled{
+    background-color: #bad2ff; 
+    cursor: not-allowed;
+}
+.containermodal button:disabled:hover{
+    background-color: #bad2ff;
+    cursor: not-allowed;
+}
+.containermodal button:hover{
+    background-color: #0b4dc9;
+}
+.containermodal hr{
+    border: 2px solid #005af6;
+    border-radius: 2px;
+    margin-bottom: 4%;
+}
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .containermodal {
+        width: 80%; /* Ajusta el ancho del contenedor */
+        height: 70vh; /* Permite que la altura se ajuste al contenido */
+        max-height: 85vh; /* Asegura que el modal no sea más alto que 85vh */
+        padding: 5%;
+    }
+
+    .containermodal label {
+        font-size: 100%; /* Ajusta el tamaño de fuente */
+        margin-right: 3%;
+    }
+
+    .containermodal h2 {
+        font-size: 150%; /* Ajusta el tamaño de fuente */
+        margin-bottom: 2%;
+    }
+
+    .containermodal select,
+    .containermodal input {
+        height: 8vh; /* Ajusta la altura de los campos de entrada */
+    }
+
+    .containermodal button {
+        height: 8vh; /* Ajusta la altura del botón */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .containermodal {
+        width: 80%; /* Ajusta el ancho del contenedor */
+        height: 65vh; /* Permite que la altura se ajuste al contenido */
+        max-height: 90vh; /* Asegura que el modal no sea más alto que 90vh */
+        padding: 5%;
+    }
+
+    .containermodal label {
+        font-size: 5vw; /* Ajusta el tamaño de fuente */
+        margin-right: 2%;
+    }
+
+    .containermodal h2 {
+        font-size: 150%; /* Ajusta el tamaño de fuente */
+    }
+
+    .containermodal select,
+    .containermodal input {
+        height: 6vh; /* Ajusta la altura de los campos de entrada */
+        margin-bottom: 5%;
+    }
+
+    .containermodal button {
+        height: 6vh; /* Ajusta la altura del botón */
+        margin-top: 2%;
+    }
+
+    .containermodal hr {
+        margin-bottom: 5%; /* Ajusta el margen inferior */
+    }
+}
